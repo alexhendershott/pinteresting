@@ -19,12 +19,14 @@ h3 {
   text-align: center;
 }
 
-.btn {
+.btn-home {
   width: 100px;
 }
 
 .btn-primary-inverse {
   border: 1px solid $brand-primary!important;
+  background-color: transparent;
+  color: $brand-primary;
 }
 
 .btn-primary-inverse:hover {
