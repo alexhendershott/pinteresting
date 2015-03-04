@@ -80,12 +80,14 @@ Rails.application.configure do
   #Required for Heroku
   config.action_mailer.default_url_options = { host: 'sml-1.com/' }
 
+  # config/environments/production.rb
   config.paperclip_defaults = {
-  :storage => :s3,
-  :s3_credentials => {
-    :bucket => ENV['slm-1'],
-    :access_key_id => ENV['AKIAJN6F7SCBHNPEAJAQ'],
-    :secret_access_key => ENV['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']
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['S3_BUCKET_NAME'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+    }
   }
 }
 
