@@ -80,7 +80,7 @@ Rails.application.configure do
   #Required for Heroku
   config.action_mailer.default_url_options = { host: 'sml-1.com/' }
 
-  # config/environments/production.rb
+  #S3
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
